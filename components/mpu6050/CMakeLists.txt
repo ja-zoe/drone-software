@@ -1,0 +1,1 @@
+REQUIRES esp_driver_i2c
