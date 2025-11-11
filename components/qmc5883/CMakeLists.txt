@@ -1,5 +1,5 @@
 idf_component_register(
-    SRCS "mpu6050.c"
+    SRCS "qmc5883.c"
     INCLUDE_DIRS "include"
     REQUIRES driver freertos esp_log
 )

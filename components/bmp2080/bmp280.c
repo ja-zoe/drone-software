@@ -4,33 +4,32 @@
 
 static const char *TAG = "BMP2080";
 
-#define BMP2080_ADDR ?? // To be decided
-#define MPU6050_REG_PWR_MGMT_1 0x6B
-#define MPU6050_REG_ACCEL_XOUT_H 0x3B
+#define BMP2080_ADDR 1110110  // Default is 0b1110110 but may be 0b1110111, so switch to second if I2C not working 
+#define BMP2080_REG_PRESS_MSB 0xF7
 
 
 const i2c_device_config_t i2c_dev_config = {
   .dev_addr_length = 7,
   .device_address = BMP2080_ADDR,
-  .scl_speed_hz ,  // To be set
+  .scl_speed_hz 400000,
   .scl_wait_us = 0,
   .disable_ack_check = false
 };
 
 i2c_master_dev_handle_t i2c_dev;
 
-// Initialize MPU6050
+// Initialize BMP2080
 esp_err_t bmp2080_init(i2c_master_bus_handle_t bus_handle) {
-    uint8_t data[2] = { MPU6050_REG_PWR_MGMT_1, 0x00 }; // To be set correctly
+    uint8_t data[2] = { BMP2080_REG_PWR_MGMT_1, 0x00 }; // To be set correctly
     i2c_master_bus_add_device(&bus_handle, &i2c_dev_config, &i2c_dev);
     i2c_master_transmit(i2c_master_dev_handle_t i2c_dev, const uint8_t *write_buffer, 8, 0);
-    return i2c_master_transmit(i2c_dev, MPU6050_ADDR, data, sizeof(data), -1);
+    return i2c_master_transmit(i2c_dev, BMP2080_ADDR, data, sizeof(data), -1);
 }
 
-esp_err_t bmp2080_read_data(i2c_master_bus_handle_t bus_handle, mpu6050_data_t *data) {
-    uint8_t reg = MPU6050_REG_ACCEL_XOUT_H;
+esp_err_t bmp2080_read_data(i2c_master_bus_handle_t bus_handle, bmp2080_data_t *data) {
+    uint8_t reg = BMP2080_REG_ACCEL_XOUT_H;
     uint8_t raw[14];
-    esp_err_t err = i2c_master_transmit_receive(bus_handle, MPU6050_ADDR, &reg, 1, raw, sizeof(raw), -1);
+    esp_err_t err = i2c_master_transmit_receive(bus_handle, BMP2080_ADDR, &reg, 1, raw, sizeof(raw), -1);
     if (err != ESP_OK) return err;
 
     data->accel_x = (int16_t)((raw[0] << 8) | raw[1]);
