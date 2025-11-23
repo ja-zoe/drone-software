@@ -1,0 +1,264 @@
+Command: /home/jazoe/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/jazoe/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/jazoe/Projects/random/hello_world/build/hello_world.elf /home/jazoe/Projects/random/hello_world/build/bootloader/bootloader.elf -m '/home/jazoe/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/jazoe/esp/esp-idf/tools/idf.py'
+[0;32mI (39) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (39) boot: compile time Nov 22 2025 21:41:51[0m
+[0;32mI (39) boot: Multicore bootloader[0m
+[0;32mI (40) boot: chip revision: v0.2[0m
+[0;32mI (40) boot: efuse block revision: v1.3[0m
+[0;32mI (41) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (42) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (43) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (44) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (45) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (47) boot: End of partition table[0m
+[0;32mI (47) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ffb4h ( 65460) map[0m
+[0;32mI (60) esp_image: segment 1: paddr=0001ffdc vaddr=3fc96400 size=0003ch (    60) load[0m
+[0;32mI (61) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2bcfch (179452) map[0m
+[0;32mI (94) esp_image: segment 3: paddr=0004bd24 vaddr=3fc9643c size=02e04h ( 11780) load[0m
+[0;32mI (98) esp_image: segment 4: paddr=0004eb30 vaddr=40374000 size=122f8h ( 74488) load[0m
+[0;32mI (115) esp_image: segment 5: paddr=00060e30 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (123) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (123) boot: Disabling RNG early entropy source...[0m
+[0;32mI (146) main_task: Started on CPU0[0m
+[0;32mI (184) main_task: Calling app_main()[0m
+[0;32mI (185) main_task: Returned from app_main()[0m
+hi---------------------------------------
+0.139467 | 0.104800 | 0.531467
+---------------------------------------
+0.136800 | 0.107200 | 0.524533
+---------------------------------------
+0.140800 | 0.104800 | 0.527467
+---------------------------------------
+0.139200 | 0.101867 | 0.530667
+---------------------------------------
+0.139467 | 0.102933 | 0.523467
+---------------------------------------
+0.136267 | 0.104267 | 0.530933
+---------------------------------------
+0.141333 | 0.100267 | 0.532533
+---------------------------------------
+0.142400 | 0.104267 | 0.529600
+---------------------------------------
+0.141333 | 0.105333 | 0.532533
+---------------------------------------
+0.138400 | 0.101333 | 0.529600
+[0;32mI (5241) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (5403) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (5881) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (5988) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (6095) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (6202) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (6309) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (6416) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (6523) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8220) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8327) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8434) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8541) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8648) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8755) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8862) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (8969) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (9076) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (9183) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (9608) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (10033) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (10140) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (10936) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (11043) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (11150) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (11893) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12000) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12107) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12214) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12321) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12481) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12588) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12695) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12802) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (12909) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (13387) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (13494) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (13601) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (13708) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (13815) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (13922) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14029) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14136) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14243) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14350) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14510) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14617) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14724) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14831) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (14938) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15045) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15152) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15259) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15366) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15473) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15580) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15687) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15794) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (15901) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16008) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16115) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16222) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16329) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16436) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16543) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16703) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16810) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (16917) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17024) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17131) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17238) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17345) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17452) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17559) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17666) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (17773) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (18516) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (18941) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (19048) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (19155) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (19262) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (19369) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (19476) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (19583) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (19690) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20115) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20222) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20329) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20436) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20543) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20650) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20757) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (20864) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (21289) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (21396) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (21503) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (21610) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (21717) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (21824) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (21931) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (22038) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (22145) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (22570) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (22995) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23102) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23209) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23316) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23423) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23530) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23637) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23744) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23851) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (23958) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24065) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24172) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24279) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24386) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24493) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24600) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24707) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (24814) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (25239) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (25664) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (25771) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (25878) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (25985) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26092) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26199) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26306) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26413) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26520) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26627) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26734) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26841) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (26948) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (27055) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (27480) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (27587) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (27694) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (27854) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (27961) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28068) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28175) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28282) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28389) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28496) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28603) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28710) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28817) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (28924) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29031) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29138) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29298) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29405) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29512) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29619) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29726) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29833) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (29940) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (30047) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (30525) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (30632) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (30739) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (30846) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (30953) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (31113) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (31220) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (31327) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (31434) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (31541) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (31648) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (32126) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (32233) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (32340) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (32447) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (32554) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (33297) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (33404) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (33511) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (33671) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (33778) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (33885) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (33992) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34099) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34206) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34366) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34473) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34580) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34687) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34794) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (34901) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (35008) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (35115) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (35222) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (35329) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (35807) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (35914) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (36021) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (36446) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (36553) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (36978) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (37085) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (37192) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (37299) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (37724) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (38149) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (38256) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (38999) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (39106) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (39213) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (39320) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (39745) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (39852) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (39959) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (40066) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (40173) MyModule: Gauss magnetic data not ready[0m
+[0;33mW (40333) MyModule: Gauss ma

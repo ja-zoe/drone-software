@@ -1,0 +1,654 @@
+Command: /home/jazoe/.espressif/python_env/idf5.5_py3.13_env/bin/python /home/jazoe/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/jazoe/Projects/random/hello_world/build/hello_world.elf /home/jazoe/Projects/random/hello_world/build/bootloader/bootloader.elf -m '/home/jazoe/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/home/jazoe/esp/esp-idf/tools/idf.py'
+[0;32mI (39) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (39) boot: compile time Nov 22 2025 21:41:51[0m
+[0;32mI (39) boot: Multicore bootloader[0m
+[0;32mI (39) boot: chip revision: v0.2[0m
+[0;32mI (39) boot: efuse block revision: v1.3[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (40) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (41) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (42) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (43) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (45) boot: End of partition table[0m
+[0;32mI (45) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ff94h ( 65428) map[0m
+[0;32mI (58) esp_image: segment 1: paddr=0001ffbc vaddr=3fc96400 size=0005ch (    92) load[0m
+[0;32mI (59) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2bcf8h (179448) map[0m
+[0;32mI (91) esp_image: segment 3: paddr=0004bd20 vaddr=3fc9645c size=02de4h ( 11748) load[0m
+[0;32mI (95) esp_image: segment 4: paddr=0004eb0c vaddr=40374000 size=122f8h ( 74488) load[0m
+[0;32mI (111) esp_image: segment 5: paddr=00060e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (119) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (119) boot: Disabling RNG early entropy source...[0m
+[0;32mI (142) main_task: Started on CPU0[0m
+[0;32mI (180) main_task: Calling app_main()[0m
+[0;32mI (181) main_task: Returned from app_main()[0m
+hi---------------------------------------
+0.180800 | 0.128800 | 0.507200
+---------------------------------------
+0.176800 | 0.127733 | 0.514400
+---------------------------------------
+0.178400 | 0.125333 | 0.509600
+---------------------------------------
+0.178400 | 0.129867 | 0.517600
+---------------------------------------
+0.184800 | 0.128267 | 0.514133
+---------------------------------------
+0.183200 | 0.127733 | 0.508267
+---------------------------------------
+0.185867 | 0.123733 | 0.505333
+---------------------------------------
+0.179200 | 0.124267 | 0.517333
+---------------------------------------
+0.184267 | 0.123467 | 0.514133
+---------------------------------------
+0.182400 | 0.126933 | 0.514133
+[0;32mI (5237) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (5266) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5280) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5294) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5308) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5322) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5401) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5415) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5429) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5508) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5522) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5536) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5615) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5629) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5643) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5657) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5736) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5750) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5764) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5843) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5857) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5871) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5885) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5899) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5978) MyModule: Raw magnetic data not ready[0m
+[0;33mW (5992) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6006) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6085) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6099) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6113) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6127) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6206) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6220) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6234) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6248) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6327) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6341) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6355) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6434) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6448) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6462) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6476) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6490) MyModule: Raw magnetic data not ready[0m
+[0;33mW (6569) MyModule: Raw magnetic data not ready[0m
+[0;32mI (6581) MyModule: Calibration complete.[0m
+---------------------------------------
+0.182933 | 0.124800 | 0.515200
+---------------------------------------
+0.181867 | 0.127200 | 0.521333
+---------------------------------------
+0.176800 | 0.122400 | 0.516533
+---------------------------------------
+0.181867 | 0.124267 | 0.502133
+---------------------------------------
+0.178933 | 0.132800 | 0.515467
+---------------------------------------
+0.181333 | 0.127733 | 0.507200
+---------------------------------------
+0.178667 | 0.127200 | 0.517600
+---------------------------------------
+0.185867 | 0.127467 | 0.506133
+---------------------------------------
+0.185867 | 0.125867 | 0.512267
+---------------------------------------
+0.183200 | 0.125867 | 0.519200
+---------------------------------------
+0.184800 | 0.125333 | 0.519200
+---------------------------------------
+0.179733 | 0.122933 | 0.511200
+---------------------------------------
+0.189333 | 0.123200 | 0.512000
+---------------------------------------
+0.186400 | 0.122667 | 0.516267
+---------------------------------------
+0.176800 | 0.134400 | 0.518400
+---------------------------------------
+0.184267 | 0.126400 | 0.507200
+---------------------------------------
+0.180800 | 0.124267 | 0.512267
+---------------------------------------
+0.181867 | 0.128267 | 0.506133
+---------------------------------------
+0.179467 | 0.128000 | 0.518133
+---------------------------------------
+0.178933 | 0.118400 | 0.512533
+[0;32mI (16641) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (16696) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16710) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16724) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16738) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16817) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16831) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16845) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16859) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16938) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16952) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16966) MyModule: Raw magnetic data not ready[0m
+[0;33mW (16980) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17059) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17073) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17087) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17101) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17115) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17194) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17208) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17222) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17236) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17250) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17329) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17343) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17357) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17371) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17450) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17464) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17478) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17492) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17506) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17520) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17599) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17613) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17627) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17641) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17720) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17734) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17748) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17762) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17776) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17855) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17869) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17883) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17897) MyModule: Raw magnetic data not ready[0m
+[0;33mW (17911) MyModule: Raw magnetic data not ready[0m
+[0;32mI (17988) MyModule: Calibration complete.[0m
+---------------------------------------
+0.185333 | 0.131200 | 0.512267
+---------------------------------------
+0.174400 | 0.122933 | 0.516533
+---------------------------------------
+0.188267 | 0.126400 | 0.513867
+---------------------------------------
+0.182933 | 0.129333 | 0.511200
+---------------------------------------
+0.185867 | 0.125333 | 0.515200
+---------------------------------------
+0.183200 | 0.128800 | 0.516267
+---------------------------------------
+0.182400 | 0.129867 | 0.514133
+---------------------------------------
+0.181867 | 0.128800 | 0.511200
+---------------------------------------
+0.182933 | 0.125333 | 0.523200
+---------------------------------------
+0.184800 | 0.124267 | 0.514133
+---------------------------------------
+0.178400 | 0.126667 | 0.514400
+---------------------------------------
+0.182400 | 0.122933 | 0.506133
+---------------------------------------
+0.184267 | 0.130667 | 0.504267
+---------------------------------------
+0.176800 | 0.124267 | 0.510400
+---------------------------------------
+0.172800 | 0.124800 | 0.519467
+---------------------------------------
+0.160800 | 0.113333 | 0.506133
+---------------------------------------
+0.150933 | 0.099467 | 0.514400
+---------------------------------------
+0.148000 | 0.096267 | 0.515200
+---------------------------------------
+0.144267 | 0.100267 | 0.522667
+---------------------------------------
+0.143467 | 0.093867 | 0.512533
+[0;32mI (28048) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (28116) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28130) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28144) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28158) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28237) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28251) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28265) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28279) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28358) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28372) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28386) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28400) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28479) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28493) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28507) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28521) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28600) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28614) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28628) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28642) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28656) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28670) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28749) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28763) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28777) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28791) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28870) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28884) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28898) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28912) MyModule: Raw magnetic data not ready[0m
+[0;33mW (28991) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29005) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29019) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29033) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29047) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29126) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29140) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29154) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29233) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29247) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29261) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29275) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29289) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29368) MyModule: Raw magnetic data not ready[0m
+[0;33mW (29382) MyModule: Raw magnetic data not ready[0m
+[0;32mI (29394) MyModule: Calibration complete.[0m
+---------------------------------------
+0.137333 | 0.095733 | 0.517600
+---------------------------------------
+0.143200 | 0.095733 | 0.515733
+---------------------------------------
+0.144800 | 0.089867 | 0.507467
+---------------------------------------
+0.142400 | 0.097333 | 0.519467
+---------------------------------------
+0.140800 | 0.096800 | 0.521600
+---------------------------------------
+0.136800 | 0.104267 | 0.516533
+---------------------------------------
+0.140000 | 0.101333 | 0.522667
+---------------------------------------
+0.142667 | 0.094933 | 0.514667
+---------------------------------------
+0.141333 | 0.095200 | 0.522667
+---------------------------------------
+0.141867 | 0.097867 | 0.508533
+---------------------------------------
+0.139467 | 0.097867 | 0.517600
+---------------------------------------
+0.139200 | 0.096267 | 0.517600
+---------------------------------------
+0.143733 | 0.096800 | 0.511467
+---------------------------------------
+0.137867 | 0.093333 | 0.510667
+---------------------------------------
+0.137867 | 0.097333 | 0.519733
+---------------------------------------
+0.143467 | 0.098933 | 0.516533
+---------------------------------------
+0.132800 | 0.099733 | 0.512800
+---------------------------------------
+0.143200 | 0.102933 | 0.522667
+---------------------------------------
+0.134400 | 0.097333 | 0.518933
+---------------------------------------
+0.143200 | 0.098933 | 0.514667
+[0;32mI (39454) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (39470) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39549) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39563) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39577) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39591) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39670) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39684) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39698) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39712) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39726) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39805) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39819) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39833) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39847) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39861) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39940) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39954) MyModule: Raw magnetic data not ready[0m
+[0;33mW (39968) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40047) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40061) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40075) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40089) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40168) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40182) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40196) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40275) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40289) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40303) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40317) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40396) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40410) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40424) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40503) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40517) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40531) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40545) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40624) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40638) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40652) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40666) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40745) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40759) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40773) MyModule: Raw magnetic data not ready[0m
+[0;33mW (40787) MyModule: Raw magnetic data not ready[0m
+[0;32mI (40799) MyModule: Calibration complete.[0m
+---------------------------------------
+0.140800 | 0.102400 | 0.514667
+---------------------------------------
+0.144267 | 0.098933 | 0.517600
+---------------------------------------
+0.141867 | 0.094400 | 0.518667
+---------------------------------------
+0.136800 | 0.104800 | 0.514667
+---------------------------------------
+0.135733 | 0.097867 | 0.521867
+---------------------------------------
+0.139733 | 0.094400 | 0.509600
+---------------------------------------
+0.137867 | 0.100800 | 0.516533
+---------------------------------------
+0.138400 | 0.093867 | 0.517600
+---------------------------------------
+0.139467 | 0.098667 | 0.521600
+---------------------------------------
+0.136800 | 0.095200 | 0.520533
+---------------------------------------
+0.135200 | 0.096267 | 0.523733
+---------------------------------------
+0.133867 | 0.090400 | 0.516800
+---------------------------------------
+0.137333 | 0.097333 | 0.518667
+---------------------------------------
+0.137333 | 0.092267 | 0.522667
+---------------------------------------
+0.133867 | 0.096000 | 0.524000
+---------------------------------------
+0.133333 | 0.097333 | 0.522933
+---------------------------------------
+0.133867 | 0.096267 | 0.511733
+---------------------------------------
+0.137333 | 0.102933 | 0.527467
+---------------------------------------
+0.134933 | 0.094933 | 0.509867
+---------------------------------------
+0.136800 | 0.097333 | 0.521600
+[0;32mI (50859) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (50927) MyModule: Raw magnetic data not ready[0m
+[0;33mW (50941) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51020) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51034) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51048) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51127) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51141) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51155) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51169) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51248) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51262) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51276) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51290) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51369) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51383) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51397) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51411) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51425) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51439) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51518) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51532) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51546) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51625) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51639) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51653) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51667) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51746) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51760) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51774) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51788) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51802) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51881) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51895) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51909) MyModule: Raw magnetic data not ready[0m
+[0;33mW (51923) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52002) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52016) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52030) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52109) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52123) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52137) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52151) MyModule: Raw magnetic data not ready[0m
+[0;33mW (52165) MyModule: Raw magnetic data not ready[0m
+[0;32mI (52203) MyModule: Calibration complete.[0m
+---------------------------------------
+0.144800 | 0.092267 | 0.514667
+---------------------------------------
+0.136800 | 0.099733 | 0.511467
+---------------------------------------
+0.136267 | 0.102933 | 0.528000
+---------------------------------------
+0.143733 | 0.094933 | 0.513600
+---------------------------------------
+0.137333 | 0.098400 | 0.514667
+---------------------------------------
+0.138933 | 0.096267 | 0.514667
+---------------------------------------
+0.135467 | 0.096000 | 0.517867
+---------------------------------------
+0.140267 | 0.097867 | 0.516533
+---------------------------------------
+0.135200 | 0.092800 | 0.521867
+---------------------------------------
+0.136800 | 0.094400 | 0.518667
+---------------------------------------
+0.133867 | 0.104267 | 0.518933
+---------------------------------------
+0.138933 | 0.101867 | 0.519733
+---------------------------------------
+0.139467 | 0.094400 | 0.518667
+---------------------------------------
+0.138400 | 0.100800 | 0.515467
+---------------------------------------
+0.143733 | 0.096267 | 0.515467
+---------------------------------------
+0.138400 | 0.094400 | 0.512533
+---------------------------------------
+0.141867 | 0.103733 | 0.508533
+---------------------------------------
+0.144267 | 0.098400 | 0.517600
+---------------------------------------
+0.132800 | 0.092000 | 0.511733
+---------------------------------------
+0.139467 | 0.097867 | 0.517600
+[0;32mI (62263) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (62279) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62293) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62307) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62321) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62400) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62414) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62428) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62442) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62521) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62535) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62549) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62628) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62642) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62656) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62670) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62749) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62763) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62777) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62856) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62870) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62884) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62898) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62912) MyModule: Raw magnetic data not ready[0m
+[0;33mW (62991) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63005) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63019) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63033) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63112) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63126) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63140) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63219) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63233) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63247) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63261) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63340) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63354) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63368) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63382) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63461) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63475) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63489) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63568) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63582) MyModule: Raw magnetic data not ready[0m
+[0;33mW (63596) MyModule: Raw magnetic data not ready[0m
+[0;32mI (63608) MyModule: Calibration complete.[0m
+---------------------------------------
+0.138400 | 0.096800 | 0.519467
+---------------------------------------
+0.135733 | 0.096800 | 0.526933
+---------------------------------------
+0.137333 | 0.094400 | 0.528533
+---------------------------------------
+0.139200 | 0.098933 | 0.513600
+---------------------------------------
+0.142933 | 0.096267 | 0.517600
+---------------------------------------
+0.140800 | 0.091733 | 0.517600
+---------------------------------------
+0.140000 | 0.101867 | 0.520533
+---------------------------------------
+0.138400 | 0.097333 | 0.518667
+---------------------------------------
+0.141333 | 0.096800 | 0.507467
+---------------------------------------
+0.136800 | 0.099733 | 0.521600
+---------------------------------------
+0.132267 | 0.098933 | 0.529867
+---------------------------------------
+0.134400 | 0.092800 | 0.515733
+---------------------------------------
+0.141333 | 0.100267 | 0.516533
+---------------------------------------
+0.132267 | 0.096267 | 0.518933
+---------------------------------------
+0.133333 | 0.095200 | 0.510933
+---------------------------------------
+0.138400 | 0.097333 | 0.515467
+---------------------------------------
+0.140267 | 0.093867 | 0.521600
+---------------------------------------
+0.138400 | 0.096800 | 0.520533
+---------------------------------------
+0.135200 | 0.099200 | 0.522933
+---------------------------------------
+0.141333 | 0.104800 | 0.524533
+[0;32mI (73668) MyModule: Starting QMC5883P calibration…[0m
+[0;33mW (73684) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73698) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73777) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73791) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73805) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73819) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73833) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73847) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73861) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73940) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73954) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73968) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73982) MyModule: Raw magnetic data not ready[0m
+[0;33mW (73996) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74075) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74089) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74103) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74117) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74131) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74145) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74159) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74238) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74252) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74266) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74280) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74294) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74373) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74387) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74401) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74415) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74429) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74508) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74522) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74536) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74550) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74629) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74643) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74657) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74736) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74750) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74764) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74778) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74857) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74871) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74885) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74964) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74978) MyModule: Raw magnetic data not ready[0m
+[0;33mW (74992) MyModule: Raw magnetic data not ready[0m
+[0;33mW (75006) MyModule: Raw magnetic data not ready[0m
+[0;32mI (75018) MyModule: Calibration complete.[0m
+---------------------------------------
+0.141333 | 0.097867 | 0.525600
+---------------------------------------
+0.145333 | 0.107733 | 0.521333
+---------------------------------------
+0.146400 | 0.102400 | 0.517333
+---------------------------------------
+0.138400 | 0.106400 | 0.528533
+---------------------------------------
+0.142933 | 0.104800 | 0.522667
+---------------------------------------
+0.141333 | 0.101867 | 0.535467
+---------------------------------------
+0.138933 | 0.098933 | 0.529600
+---------------------------------------
+0.143467 | 0.098933 | 0.533600
+---------------------------------------
+0.135733 | 0.102667 | 0.530933
+---------------------------------------
+0.143467 | 0.102400 | 0.520533
+---------------------------------------
+0.140800 | 0.104267 | 0.538667
+---------------------------------------
+0.145333 | 0.103733 | 0.526400
+---------------------------------------
+0.141867 | 0.101333 | 0.520533
+---------------------------------------
+0.143733 | 0.100267 | 0.516533
+---------------------------------------
+0.140800 | 0.097333 | 0.529600
+---------------------------------------
+0.142400 | 0.104800 | 0.526667
+---------------------------------------
+0.140800 | 0.102667 | 0.528533
+---------------------------------------
+0.141867 | 0.102933 | 0.525600
+---------------------------------------
+0.143467 | 0.100267 | 0.528533
+-------------------
