@@ -1,2 +1,2 @@
-source /home/jazoe/Projects/random/hello_world/build/gdbinit/symbols
-source /home/jazoe/Projects/random/hello_world/build/gdbinit/connect
+source /home/jazoe/Projects/drone-software/build/gdbinit/symbols
+source /home/jazoe/Projects/drone-software/build/gdbinit/connect

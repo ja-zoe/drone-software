@@ -10,18 +10,18 @@ if(NOT EXISTS "/home/jazoe/esp/esp-idf/components/bootloader/subproject")
   file(MAKE_DIRECTORY "/home/jazoe/esp/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/jazoe/Projects/random/hello_world/build/bootloader"
-  "/home/jazoe/Projects/random/hello_world/build/bootloader-prefix"
-  "/home/jazoe/Projects/random/hello_world/build/bootloader-prefix/tmp"
-  "/home/jazoe/Projects/random/hello_world/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/jazoe/Projects/random/hello_world/build/bootloader-prefix/src"
-  "/home/jazoe/Projects/random/hello_world/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/jazoe/Projects/drone-software/build/bootloader"
+  "/home/jazoe/Projects/drone-software/build/bootloader-prefix"
+  "/home/jazoe/Projects/drone-software/build/bootloader-prefix/tmp"
+  "/home/jazoe/Projects/drone-software/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/jazoe/Projects/drone-software/build/bootloader-prefix/src"
+  "/home/jazoe/Projects/drone-software/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/jazoe/Projects/random/hello_world/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/jazoe/Projects/drone-software/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/jazoe/Projects/random/hello_world/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/jazoe/Projects/drone-software/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

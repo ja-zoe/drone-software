@@ -17,4 +17,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /home/jazoe/Projects/random/hello_world/build/bootloader/bootloader.elf
+file /home/jazoe/Projects/drone-software/build/bootloader/bootloader.elf

@@ -7,6 +7,7 @@
 #include "Arduino.h"
 #include "qmc5883p.h"
 #include <Wire.h>
+#include "motorControlTest.h"
 
 extern "C" {
   #include <stdio.h>
@@ -30,51 +31,19 @@ static const char* TAG = "Main";
 
 extern "C" void app_main(void);
 
-void app_main(void)
-{
+DShotRMT esc1, esc2, esc3, esc4;
+
+void app_main() {
+    // Install/init ESCs once
+    esc1.install(GPIO_NUM_2, RMT_CHANNEL_0); esc1.init(); esc1.beep();
+
+    // Create a task that handles throttle ramps
     xTaskCreatePinnedToCore([](void*){
-        initArduino();
-        Wire.begin(GPIO_NUM_5, GPIO_NUM_6);
-        delay(10);
-        QMC5883PDriver qmc5883p;
-
-        qmc5883p.init({
-          .mode = QMC5883P_MODE_CONTINUOUS,
-          .odr = QMC5883P_ODR_200HZ,
-          .osr = QMC5883P_OSR_4,
-          .dsr = QMC5883P_DSR_2,
-          .range = QMC5883P_RANGE_8G,
-          .setResetMode = QMC5883P_SETRESET_ON
-        });
-        printf("hi");
-
-        for (;;) {
-          int16_t xg = 0, yg = 0, zg = 0;
-          
-          for (int i = 0; i < 10; i++) {
-            esp_ret = qmc5883p.read_raw(&xg,&yg,&zg);
-            if(esp_ret != ESP_OK) {
-              ESP_LOGI(TAG, "Failed to read gauss");
-            };
-            printf("---------------------------------------\n");
-            printf("%d | %d | %d\n", xg, yg, zg);
-            vTaskDelay(pdMS_TO_TICKS(500));
-          }
-
-          esp_ret = qmc5883p.calibrate();
-
-          for (int i = 0; i < 10; i++) {
-            esp_ret = qmc5883p.read_raw(&xg,&yg,&zg);
-            if(esp_ret != ESP_OK) {
-              ESP_LOGI(TAG, "Failed to read gauss");
-            };
-            printf("---------------------------------------\n");
-            printf("%d | %d | %d\n", xg, yg, zg);
-            vTaskDelay(pdMS_TO_TICKS(500));
-          };
+        for (uint16_t i = 48; i < 2047; i += 20) {
+            esc1.sendThrottle(i);
+            vTaskDelay(pdMS_TO_TICKS(100));
         }
-
-    }, "arduino", 8192, nullptr, 1, nullptr, 1);
+    }, "motor_task", 8192, nullptr, 1, nullptr, 1);
 }
 
 

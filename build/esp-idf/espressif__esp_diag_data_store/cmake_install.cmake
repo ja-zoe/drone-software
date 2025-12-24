@@ -1,4 +1,4 @@
-# Install script for directory: /home/jazoe/Projects/random/hello_world/managed_components/espressif__esp_diag_data_store
+# Install script for directory: /home/jazoe/Projects/drone-software/managed_components/espressif__esp_diag_data_store
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/jazoe/Projects/random/hello_world/build/esp-idf/espressif__esp_diag_data_store/install_local_manifest.txt"
+  file(WRITE "/home/jazoe/Projects/drone-software/build/esp-idf/espressif__esp_diag_data_store/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
